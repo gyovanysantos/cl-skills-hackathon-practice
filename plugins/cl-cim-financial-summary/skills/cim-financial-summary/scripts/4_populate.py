@@ -58,7 +58,7 @@ def resolve_template_path(config, config_path):
 # bridge total (reported EBITDA + adjustments) -- see docs/03-design.md.
 # Extending this pipeline to a new formula-derived row means adding it here,
 # not silently dropping a KeyError into production.
-FORMULA_DERIVED_ROWS = set()  # DEMO BUG (issue #23): deliberately dropped "adjusted_ebitda"
+FORMULA_DERIVED_ROWS = {"adjusted_ebitda"}
 
 
 def populate_template(rows, template_path, output_path):
