@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gyovanysantos/cl-skills-hackathon-practice/schemas/normalised.schema.json",
+  "title": "Normalised CIM value (Stage 2 output)",
+  "description": "Stage 2's output: every extracted.schema.json entry, mapped to a template row and rescaled to the client config's reporting unit. This is what stage 3 renders into the review workbook.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["row", "period", "value", "unit", "source", "confidence", "checks", "review", "template_row", "value_scaled"],
+    "properties": {
+      "row": { "type": "string", "enum": ["net_revenue", "gross_profit", "reported_ebitda", "ebitda_adjustments", "adjusted_ebitda"] },
+      "period": { "type": "string", "pattern": "^FY[0-9]{4}[AEB]$" },
+      "value": { "type": ["number", "null"] },
+      "unit": { "type": "string", "enum": ["USD_millions", "USD_thousands", "USD_actuals"] },
+      "source": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["page", "label"],
+        "properties": {
+          "page": { "type": "integer", "minimum": 1 },
+          "label": { "type": "string" }
+        }
+      },
+      "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+      "checks": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["schema", "arithmetic", "two_pass"],
+        "properties": {
+          "schema": { "type": "boolean" },
+          "arithmetic": { "type": "boolean" },
+          "two_pass": { "type": "boolean" }
+        }
+      },
+      "review": { "type": "boolean" },
+      "template_row": {
+        "type": "string",
+        "description": "The target row key in the Excel template's entry-cell map, per config.row_map. Usually identical to `row` but kept distinct so a client's mapping can rename or combine lines without touching the extraction contract."
+      },
+      "value_scaled": {
+        "type": ["number", "null"],
+        "description": "The value converted to config.reporting_unit (e.g. always millions), regardless of the unit it was originally reported in. Preserves the raw `value`/`unit` above for audit."
+      }
+    }
+  }
+}
