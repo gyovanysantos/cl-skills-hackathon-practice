@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests (stages 0, 2, 3, 4, template)
+        run: pytest tests/ -v
+
+      - name: Run extraction eval against the committed sample CIM
+        run: python3 tests/eval_extract.py tests/fixtures/extracted.expected.json
+
+      - name: End-to-end smoke -- full pipeline on the mock CIM
+        run: |
+          set -e
+          SCRIPTS=plugins/cl-cim-financial-summary/skills/cim-financial-summary/scripts
+          CONFIG=plugins/cl-cim-financial-summary/config/mock-client.json
+          WORK=$(mktemp -d)
+
+          python3 "$SCRIPTS/0_pdf_to_text.py" tests/fixtures/mock-cim.pdf "$WORK/pages.txt"
+          cp tests/fixtures/extracted.expected.json "$WORK/extracted.json"
+          python3 "$SCRIPTS/2_validate_map.py" "$WORK/extracted.json" "$CONFIG" "$WORK/normalised.json"
+          python3 "$SCRIPTS/3_review_xlsx.py" "$WORK/normalised.json" "$WORK/review.xlsx"
+
+          # Stage 4 must refuse before the flagged row is confirmed.
+          if python3 "$SCRIPTS/4_populate.py" "$WORK/review.xlsx" "$CONFIG" "$WORK/financial-summary.xlsx"; then
+            echo "::error::stage 4 populated the template while a row was still unconfirmed"
+            exit 1
+          fi
+          test ! -f "$WORK/financial-summary.xlsx"
+
+          python3 - "$WORK/review.xlsx" <<'PYEOF'
+          import sys
+          from openpyxl import load_workbook
+          wb = load_workbook(sys.argv[1])
+          ws = wb["All values"]
+          headers = [c.value for c in ws[1]]
+          confirmed_col = headers.index("Confirmed") + 1
+          for r in range(2, ws.max_row + 1):
+              ws.cell(row=r, column=confirmed_col, value=True)
+          wb.save(sys.argv[1])
+          PYEOF
+
+          # Now stage 4 must succeed.
+          python3 "$SCRIPTS/4_populate.py" "$WORK/review.xlsx" "$CONFIG" "$WORK/financial-summary.xlsx"
+          test -f "$WORK/financial-summary.xlsx"
+          echo "end-to-end pipeline produced financial-summary.xlsx"
