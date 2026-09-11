@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Derive version and plugin name
+        id: vars
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "plugin_name=cl-cim-financial-summary" >> "$GITHUB_OUTPUT"
+
+      - name: Build versioned ZIP
+        run: |
+          set -e
+          PLUGIN_DIR="plugins/${{ steps.vars.outputs.plugin_name }}"
+          ZIP_NAME="${{ steps.vars.outputs.plugin_name }}-${{ steps.vars.outputs.tag }}.zip"
+          test -d "$PLUGIN_DIR"
+          cd plugins
+          zip -r "../$ZIP_NAME" "${{ steps.vars.outputs.plugin_name }}" -x "*.pyc" -x "__pycache__/*"
+          cd ..
+          echo "zip_name=$ZIP_NAME" >> "$GITHUB_ENV"
+          unzip -l "$ZIP_NAME"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.vars.outputs.tag }}
+          name: "${{ steps.vars.outputs.plugin_name }} ${{ steps.vars.outputs.tag }}"
+          body: |
+            Practice release for the CentriLogic Claude Skills Hackathon rehearsal.
+            Fabricated data only -- see docs/ for the business/technical requirements and design.
+
+            Install: see docs/INSTALL.md.
+          files: ${{ env.zip_name }}
