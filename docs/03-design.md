@@ -46,6 +46,14 @@ plus formula rows for growth % and margin %. `4_populate.py` writes ONLY the dec
 and never touches a cell containing a formula — enforced by reading `data_only=False` and asserting
 `cell.value` is not already a formula string before writing.
 
+**Entry cells (4 rows): net revenue, gross profit, reported EBITDA, adjustments to EBITDA.**
+**Formula rows: revenue growth %, gross margin %, EBITDA margin %, adjusted EBITDA margin %, and
+adjusted EBITDA itself** (`= reported EBITDA + adjustments`). Adjusted EBITDA is deliberately a
+formula, not a fifth entry cell, even though the CIM prints it directly and the skill extracts it
+with its own confidence score: extraction still captures the CIM's own adjusted-EBITDA figure so
+stage 2's arithmetic check can catch a bridge that doesn't add up in the source, but the template
+always computes the bridge live so it self-corrects if an analyst edits an upstream cell later.
+
 ## Confidence object (shared shape, reused verbatim from the hackathon canvas)
 
 ```json
