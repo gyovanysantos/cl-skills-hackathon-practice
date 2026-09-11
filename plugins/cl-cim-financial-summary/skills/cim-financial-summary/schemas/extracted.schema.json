@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gyovanysantos/cl-skills-hackathon-practice/schemas/extracted.schema.json",
+  "title": "Extracted CIM value (Stage 1 output)",
+  "description": "One entry per (row, period) pair, as extracted from the CIM's consolidated financial overview. This is what the LLM extraction step must produce, and what stage 2 validates before mapping.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["row", "period", "value", "unit", "source", "confidence", "checks", "review"],
+    "properties": {
+      "row": {
+        "type": "string",
+        "description": "Canonical financial line key, e.g. net_revenue, gross_profit, reported_ebitda, ebitda_adjustments, adjusted_ebitda.",
+        "enum": ["net_revenue", "gross_profit", "reported_ebitda", "ebitda_adjustments", "adjusted_ebitda"]
+      },
+      "period": {
+        "type": "string",
+        "description": "Source-driven period label, e.g. FY2023A (actual) or FY2027E (estimate/forecast). Never a fixed example year.",
+        "pattern": "^FY[0-9]{4}[AEB]$"
+      },
+      "value": {
+        "type": ["number", "null"],
+        "description": "The extracted value in the unit given below, or null when the period genuinely is not disclosed in the source. Never invented."
+      },
+      "unit": {
+        "type": "string",
+        "description": "The unit as reported in the source, before any stage-2 rescaling.",
+        "enum": ["USD_millions", "USD_thousands", "USD_actuals"]
+      },
+      "source": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["page", "label"],
+        "properties": {
+          "page": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "1-indexed PDF page number the value was read from."
+          },
+          "label": {
+            "type": "string",
+            "description": "The line label exactly as printed in the source, e.g. \"Adjustments to EBITDA\"."
+          }
+        }
+      },
+      "confidence": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "Computed, not vibes: 1.0 only when schema/arithmetic/two_pass all pass. See docs/02-technical-requirements.md."
+      },
+      "checks": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["schema", "arithmetic", "two_pass"],
+        "properties": {
+          "schema": {
+            "type": "boolean",
+            "description": "True if the value parses to the declared type/unit."
+          },
+          "arithmetic": {
+            "type": "boolean",
+            "description": "True if margin/EBITDA-derived relationships reconcile for this value (e.g. reported_ebitda + ebitda_adjustments == adjusted_ebitda, within rounding)."
+          },
+          "two_pass": {
+            "type": "boolean",
+            "description": "True only if two independent read attempts on the source agree within rounding."
+          }
+        }
+      },
+      "review": {
+        "type": "boolean",
+        "description": "True whenever confidence < config.review_threshold OR any check is false. Never silently cleared by a script -- only a human confirming the review workbook clears it."
+      }
+    }
+  }
+}
