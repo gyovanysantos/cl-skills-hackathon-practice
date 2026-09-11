@@ -1,0 +1,1047 @@
+[
+  {
+    "row": "net_revenue",
+    "period": "FY2020A",
+    "value": 142.3,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Net revenue"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": 142.3
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2020A",
+    "value": 51.9,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Gross profit"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": 51.9
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2020A",
+    "value": 18.5,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": 18.5
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2020A",
+    "value": 3.2,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": 3.2
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2020A",
+    "value": 21.7,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": 21.7
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2021A",
+    "value": 156.8,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Net revenue"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": 156.8
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2021A",
+    "value": 57.7,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Gross profit"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": 57.7
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2021A",
+    "value": 21.0,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": 21.0
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2021A",
+    "value": 2.8,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": 2.8
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2021A",
+    "value": 23.8,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": 23.8
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2022A",
+    "value": 171.4,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Net revenue"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": 171.4
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2022A",
+    "value": 63.4,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Gross profit"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": 63.4
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2022A",
+    "value": 23.9,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": 23.9
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2022A",
+    "value": 4.1,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": 4.1
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2022A",
+    "value": 28.0,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": 28.0
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2023A",
+    "value": 189.6,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Net revenue"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": 189.6
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2023A",
+    "value": 70.7,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Gross profit"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": 70.7
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2023A",
+    "value": 27.2,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": 27.2
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2023A",
+    "value": 5.1,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 0.55,
+    "checks": {
+      "schema": true,
+      "arithmetic": false,
+      "two_pass": false
+    },
+    "review": true,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": 5.1
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2023A",
+    "value": 32.3,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": 32.3
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2024A",
+    "value": 204.1,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Net revenue"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": 204.1
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2024A",
+    "value": 77.6,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Gross profit"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": 77.6
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2024A",
+    "value": 31.8,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": 31.8
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2024A",
+    "value": 3.6,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": 3.6
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2024A",
+    "value": 35.4,
+    "unit": "USD_millions",
+    "source": {
+      "page": 12,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": 35.4
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2025E",
+    "value": 221.0,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Net revenue"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": 221.0
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2025E",
+    "value": 85.1,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Gross profit"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": 85.1
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2025E",
+    "value": 35.9,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": 35.9
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2025E",
+    "value": 2.0,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": 2.0
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2025E",
+    "value": 37.9,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": 37.9
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2026E",
+    "value": 239.5,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Net revenue"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": 239.5
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2026E",
+    "value": 93.9,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Gross profit"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": 93.9
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2026E",
+    "value": 40.2,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": 40.2
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2026E",
+    "value": 1.8,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": 1.8
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2026E",
+    "value": 42.0,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": 42.0
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2027E",
+    "value": 259.8,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Net revenue"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": 259.8
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2027E",
+    "value": 103.4,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Gross profit"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": 103.4
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2027E",
+    "value": 45.1,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": 45.1
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2027E",
+    "value": 1.5,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": 1.5
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2027E",
+    "value": 46.6,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": 46.6
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2028E",
+    "value": 281.9,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Net revenue"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": 281.9
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2028E",
+    "value": 113.7,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Gross profit"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": 113.7
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2028E",
+    "value": 50.5,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": 50.5
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2028E",
+    "value": 1.2,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": 1.2
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2028E",
+    "value": 51.7,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 0.97,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": 51.7
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2029E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Net revenue"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": null
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2029E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Gross profit"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": null
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2029E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": null
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2029E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": null
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2029E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": null
+  },
+  {
+    "row": "net_revenue",
+    "period": "FY2030E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Net revenue"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "net_revenue",
+    "value_scaled": null
+  },
+  {
+    "row": "gross_profit",
+    "period": "FY2030E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Gross profit"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "gross_profit",
+    "value_scaled": null
+  },
+  {
+    "row": "reported_ebitda",
+    "period": "FY2030E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Reported EBITDA"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "reported_ebitda",
+    "value_scaled": null
+  },
+  {
+    "row": "ebitda_adjustments",
+    "period": "FY2030E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjustments to EBITDA"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "ebitda_adjustments",
+    "value_scaled": null
+  },
+  {
+    "row": "adjusted_ebitda",
+    "period": "FY2030E",
+    "value": null,
+    "unit": "USD_millions",
+    "source": {
+      "page": 13,
+      "label": "Adjusted EBITDA"
+    },
+    "confidence": 1.0,
+    "checks": {
+      "schema": true,
+      "arithmetic": true,
+      "two_pass": true
+    },
+    "review": false,
+    "template_row": "adjusted_ebitda",
+    "value_scaled": null
+  }
+]
