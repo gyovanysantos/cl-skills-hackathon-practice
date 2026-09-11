@@ -36,6 +36,7 @@ NEEDS_REVIEW_FILL = PatternFill("solid", fgColor="FDE68A")
 
 COLUMNS = [
     ("row", "Row"),
+    ("template_row", "Template row"),  # machine key -- stage 4 looks up defined names by this, not the label
     ("period", "Period"),
     ("value", "Value (as extracted)"),
     ("unit", "Unit"),
@@ -88,6 +89,7 @@ def build_review_workbook(normalised_data, output_path):
 
         values = {
             "row": ROW_LABELS.get(entry["row"], entry["row"]),
+            "template_row": entry["template_row"],
             "period": entry["period"],
             "value": entry["value"],
             "unit": entry["unit"],

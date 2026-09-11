@@ -91,8 +91,10 @@ def test_flagged_rows_are_highlighted():
         stage3.build_review_workbook(normalised, out)
         wb = load_workbook(out)
         ws = wb["All values"]
+        header = [c.value for c in ws[1]]
+        review_col = header.index("Review") + 1
         for r in range(2, ws.max_row + 1):
-            review = ws.cell(row=r, column=8).value  # Review column
+            review = ws.cell(row=r, column=review_col).value
             fill = ws.cell(row=r, column=1).fill
             if review:
                 assert fill.fgColor.rgb in ("00FEF3C7", "FFFEF3C7"), f"row {r} should be highlighted"
