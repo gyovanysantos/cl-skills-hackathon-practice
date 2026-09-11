@@ -1,0 +1,12 @@
+{
+  "name": "cl-cim-financial-summary",
+  "version": "0.1.0",
+  "description": "Financial Summary from CIM — practice build (Skill 2) for the CentriLogic Claude Skills Hackathon. Fabricated mock data only.",
+  "author": {
+    "name": "Gyovany Santos",
+    "email": "sntsgyovany@gmail.com"
+  },
+  "homepage": "https://github.com/gyovanysantos/cl-skills-hackathon-practice",
+  "license": "UNLICENSED",
+  "keywords": ["cim", "sim", "financial-summary", "ebitda", "private-equity", "hackathon-practice"]
+}

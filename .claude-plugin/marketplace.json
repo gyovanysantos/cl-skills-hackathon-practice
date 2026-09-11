@@ -1,0 +1,14 @@
+{
+  "name": "cl-skills-hackathon-practice",
+  "owner": {
+    "name": "Gyovany Santos",
+    "email": "sntsgyovany@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "cl-cim-financial-summary",
+      "source": "./plugins/cl-cim-financial-summary",
+      "description": "Extracts a financial summary from a CIM/SIM PDF into a bridged EBITDA template, with a confidence review gate. Practice build with fabricated data."
+    }
+  ]
+}
