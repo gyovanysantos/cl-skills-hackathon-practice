@@ -1,0 +1,11 @@
+# Runtime dependencies for the plugin's own scripts:
+# 0_pdf_to_text.py, 2_validate_map.py, 3_review_xlsx.py, 4_populate.py
+openpyxl==3.1.5
+pypdf==6.18.1
+jsonschema==4.26.0
+
+# Dev/tooling only: regenerating tests/fixtures/mock-cim.pdf and the Excel
+# template (tools/*.py), and running the test suite. Not needed by a client
+# installing the plugin -- only by this repo's own build.
+reportlab==5.0.1
+pytest==9.1.1
