@@ -1,0 +1,15 @@
+{
+  "client": "mock-client",
+  "_note": "Fabricated config for the hackathon practice run. A real client's config replaces this file only -- no script changes.",
+  "reporting_unit": "USD_millions",
+  "review_threshold": 0.90,
+  "template_path": "../skills/cim-financial-summary/assets/financial-summary-template.xlsx",
+  "row_map": {
+    "_note": "canonical extraction row -> template row key. Identity for this mock client; a real client's template can rename or combine lines here without touching any script.",
+    "net_revenue": "net_revenue",
+    "gross_profit": "gross_profit",
+    "reported_ebitda": "reported_ebitda",
+    "ebitda_adjustments": "ebitda_adjustments",
+    "adjusted_ebitda": "adjusted_ebitda"
+  }
+}
